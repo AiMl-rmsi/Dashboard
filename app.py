@@ -8,9 +8,9 @@ st.set_page_config(page_title="KAIOS-TS Dashboard_V4", layout="wide")
 
 
 # --- File Paths ---
-LOG_FILE = "data\Log_AnnotationServices.csv"
-CONFIG_FILE = "data\Config_AnnotationServices.csv"
-TEAM_FILE = "data\Team_Grouping_KAIOS.xlsx"
+LOG_FILE = "data/Log_AnnotationServices.csv"
+CONFIG_FILE = "data/Config_AnnotationServices.csv"
+TEAM_FILE = "data/Team_Grouping_KAIOS.xlsx"
 
 # --- File Checks ---
 for file, label in [(LOG_FILE, "Log"), (CONFIG_FILE, "Config"), (TEAM_FILE, "Team Group")]:
@@ -43,7 +43,7 @@ QC_TARGET_PER_USER = 2000
 # --- Logo and Title Header ---
 col1, col2, col3 = st.columns([1, 8, 1])  # Make middle column wider
 with col1:
-    st.image("data\KAIOS_Logo.jpg", use_container_width=True)
+    st.image("data/KAIOS_Logo.jpg", use_container_width=True)
 with col2:
     st.markdown(
         """
@@ -58,7 +58,7 @@ with col2:
         unsafe_allow_html=True
     )
 with col3:
-    st.image("data\RMSI_Logo.jpg", use_container_width=True)
+    st.image("data/RMSI_Logo.jpg", use_container_width=True)
 
 
 # --- Daily Summary --------------------------------------------------------------------------------------------
